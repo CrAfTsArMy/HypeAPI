@@ -1,6 +1,6 @@
 # HypeAPI - The most useful api you have ever seen
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/CrAfTsArMy/HypeAPI)
-![[GitHub][https://img.shields.io/github/license/CrAfTsArMy/HypeAPI]][https://github.com/CrAfTsArMy/HypeAPI/blob/master/LICENSE]
+![GitHub](https://img.shields.io/github/license/CrAfTsArMy/HypeAPI)
 
 
 ## How to use?
