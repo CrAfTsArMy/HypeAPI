@@ -18,7 +18,7 @@ You can find basic functions, classes and everything from [wiki](https://github.
 <dependency>
   <groupId>com.github.CrAfTsArMy</groupId>
   <artifactId>HypeAPI</artifactId>
-  <version>2.5</version>
+  <version>2.6</version>
 </dependency>
 ```
 
@@ -33,7 +33,7 @@ allprojects {
 ```
 ```gradle
 dependencies {
-  implementation 'com.github.CrAfTsArMy:HypeAPI:2.5'
+  implementation 'com.github.CrAfTsArMy:HypeAPI:2.6'
 }
 ```
 
