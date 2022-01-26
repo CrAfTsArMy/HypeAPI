@@ -4,7 +4,7 @@
 ![GitHub](https://img.shields.io/github/license/CrAfTsArMy/HypeAPI)
 ![GitHub all releases](https://img.shields.io/github/downloads/CrAfTsArMy/HypeAPI/total)
 ![GitHub issues](https://img.shields.io/github/issues-raw/CrAfTsArMy/HypeAPI)
-![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCtBJZHmZqOvWJ0t8hjhWSAA?label=CraftsCodesArmy&style=flat-square)
+![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCtBJZHmZqOvWJ0t8hjhWSAA?label=CraftsCodesArmy&style=flat)
 ![Twitch Status](https://img.shields.io/twitch/status/crafts__army?label=CrAfTs__ArMy)
 
 
