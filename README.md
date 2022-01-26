@@ -1,6 +1,9 @@
 # HypeAPI - The most useful api you have ever seen
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/CrAfTsArMy/HypeAPI)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/CrAfTsArMy/HypeAPI)
 ![GitHub](https://img.shields.io/github/license/CrAfTsArMy/HypeAPI)
+![GitHub all releases](https://img.shields.io/github/downloads/CrAfTsArMy/HypeAPI/total)
+![GitHub issues](https://img.shields.io/github/issues-raw/CrAfTsArMy/HypeAPI)
 
 
 ## How to use?
