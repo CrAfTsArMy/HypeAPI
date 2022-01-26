@@ -1,5 +1,6 @@
 # FelineAPI - Development made easy
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/NotTrixxie/FelineAPI) ![GitHub](https://img.shields.io/github/license/NotTrixxie/FelineAPI)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/CrAfTsArMy/HypeAPI)
+![GitHub](https://img.shields.io/github/license/NotTrixxie/FelineAPI)
 
 
 ## How to use?
@@ -17,7 +18,7 @@ You can find basic functions, classes and everything from [wiki](https://github.
 <dependency>
   <groupId>com.github.CrAfTsArMy</groupId>
   <artifactId>HypeAPI</artifactId>
-  <version>1.0</version>
+  <version>2.5</version>
 </dependency>
 ```
 
@@ -32,7 +33,7 @@ allprojects {
 ```
 ```gradle
 dependencies {
-  implementation 'com.github.CrAfTsArMy:HypeAPI:1.0'
+  implementation 'com.github.CrAfTsArMy:HypeAPI:2.5'
 }
 ```
 
