@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="HyperAPI:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/HyperAPI_jar</output-path>
+    <root id="archive" name="HyperAPI.jar">
+      <element id="module-output" name="HyperAPI" />
+    </root>
+  </artifact>
+</component>
