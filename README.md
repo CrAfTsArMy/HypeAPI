@@ -1,6 +1,11 @@
-# FelineAPI - Development made easy
+# HypeAPI - The most useful api you have ever seen
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/CrAfTsArMy/HypeAPI)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/CrAfTsArMy/HypeAPI)
 ![GitHub](https://img.shields.io/github/license/CrAfTsArMy/HypeAPI)
+![GitHub all releases](https://img.shields.io/github/downloads/CrAfTsArMy/HypeAPI/total)
+![GitHub issues](https://img.shields.io/github/issues-raw/CrAfTsArMy/HypeAPI)
+![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCtBJZHmZqOvWJ0t8hjhWSAA?label=CraftsCodesArmy&style=flat)
+![Twitch Status](https://img.shields.io/twitch/status/crafts__army?label=CrAfTs__ArMy)
 
 
 ## How to use?
@@ -18,7 +23,7 @@ You can find basic functions, classes and everything from [wiki](https://github.
 <dependency>
   <groupId>com.github.CrAfTsArMy</groupId>
   <artifactId>HypeAPI</artifactId>
-  <version>2.5</version>
+  <version>2.6</version>
 </dependency>
 ```
 
@@ -33,7 +38,7 @@ allprojects {
 ```
 ```gradle
 dependencies {
-  implementation 'com.github.CrAfTsArMy:HypeAPI:2.5'
+  implementation 'com.github.CrAfTsArMy:HypeAPI:2.6'
 }
 ```
 
