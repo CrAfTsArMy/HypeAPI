@@ -13,7 +13,7 @@ import java.lang.management.MemoryMXBean;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
-public class HypeConsoleProzessbar {
+public class HypeConsoleProgressbar {
 
     private final String name;
     private final HypeThread hypeThread;
@@ -26,9 +26,9 @@ public class HypeConsoleProzessbar {
     private long start = System.currentTimeMillis();
 
 
-    public HypeConsoleProzessbar(String name) {
+    public HypeConsoleProgressbar(String name) {
         this.name = name;
-        this.hypeThread = new HypeThread(new HypeRunnable(), "HypeConsoleProcess-" + UUID.randomUUID(), -1);
+        this.hypeThread = new HypeThread(new HypeRunnable(), "HypeConsoleProgress-" + UUID.randomUUID(), -1);
         stream = System.out;
         OutputStream outputStream = new OutputStream() {
             @Override
@@ -52,7 +52,7 @@ public class HypeConsoleProzessbar {
                     bar = bar.replace("%memory%", (used < 1000 ? (used <= 99 ? (used <= 9 ? "000" : "00") : "0") : "") + (int) used + "/" + (max < 1000 ? (max <= 99 ? (max <= 9 ? "000" : "00") : "0") : "") + (int) max);
                     bar = bar.replace("%time%", HypeTimeConverter.toString(System.currentTimeMillis() - start));
                     stream.write(bar.getBytes());
-                    timestamp = System.currentTimeMillis() + 1000;
+                    timestamp = System.currentTimeMillis() + 100;
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -92,7 +92,7 @@ public class HypeConsoleProzessbar {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        HypeConsoleProzessbar processbar = new HypeConsoleProzessbar("Test");
+        HypeConsoleProgressbar processbar = new HypeConsoleProgressbar("Test");
         for (int i = 0; i < 101; i++) {
             processbar.update(i);
             Thread.sleep(1000);

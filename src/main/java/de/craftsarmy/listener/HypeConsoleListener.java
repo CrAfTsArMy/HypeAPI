@@ -19,7 +19,7 @@ public class HypeConsoleListener {
         HypeRunnable runnable = new HypeRunnable();
         hypeThread = new HypeThread(runnable);
         hypeTask = hypeThread -> {
-            String temp = "";
+            String temp;
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
             if (HypeConsoleModul.getCommandManager() == null) {
                 System.out.println("ERROR - HypeConsoleModul was not loaded correctly!");
@@ -50,11 +50,6 @@ public class HypeConsoleListener {
         hypeThread.getHypeRunnable().unregister(hypeTask);
         hypeThread = null;
         hypeTask = null;
-    }
-
-    public static void main(String[] args) {
-        //HypeModulManager.enable(HypeModul.CONSOLE);
-        HypeConsoleListener.start();
     }
 
 }

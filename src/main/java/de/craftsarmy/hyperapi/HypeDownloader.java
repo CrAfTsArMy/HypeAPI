@@ -1,6 +1,6 @@
 package de.craftsarmy.hyperapi;
 
-import de.craftsarmy.hyperapi.console.HypeConsoleProzessbar;
+import de.craftsarmy.hyperapi.console.HypeConsoleProgressbar;
 import de.craftsarmy.hyperapi.download.HypeDownloadTask;
 
 import java.io.BufferedInputStream;
@@ -19,7 +19,7 @@ public class HypeDownloader {
         downloader.download("https://web1.craftsblock.de/cloud/index.php/s/6YTnLXKbsYawAnq/download", new File("C:\\Users\\sve_m\\Desktop\\test.mov"));
     }
 
-    private HypeConsoleProzessbar prozessbar;
+    private HypeConsoleProgressbar progressbar;
     private final ConcurrentLinkedQueue<HypeDownloadTask> tasks = new ConcurrentLinkedQueue<>();
 
     public void download(String url, File file) {
@@ -32,7 +32,7 @@ public class HypeDownloader {
 
     public void download(URL url, File file) {
         HypeDownloadTask task = new HypeDownloadTask(url, file);
-        if (prozessbar == null)
+        if (progressbar == null)
             download(task);
         else
             tasks.add(task);
@@ -47,9 +47,9 @@ public class HypeDownloader {
     }
 
     private void download(HypeDownloadTask task) {
-        if(prozessbar == null)
-            prozessbar = new HypeConsoleProzessbar(task.getUrl().toString());
-        prozessbar.update(0);
+        if(progressbar == null)
+            progressbar = new HypeConsoleProgressbar(task.getUrl().toString());
+        progressbar.update(0);
         BufferedInputStream inputStream = null;
         FileOutputStream outputStream = null;
         try {
@@ -71,14 +71,14 @@ public class HypeDownloader {
                 outputStream.write(data, 0, count);
                 sumCount += count;
                 if (size > 0)
-                    prozessbar.update(sumCount / size * 100.0D);
+                    progressbar.update(sumCount / size * 100.0D);
             }
         } catch (IOException exception) {
             throw new Error(exception);
         } finally {
-            prozessbar.update(100.0D);
-            prozessbar.stop();
-            prozessbar = null;
+            progressbar.update(100.0D);
+            progressbar.stop();
+            progressbar = null;
             try {
                 if (inputStream != null)
                     inputStream.close();
