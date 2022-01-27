@@ -3,7 +3,7 @@ import de.craftsarmy.hyperapi.console.HypeConsoleProgressbar;
 public class ConsoleProgressbarExample {
 
     public static void main(String[] args) {
-        HypeConsoleProgressbar progressbar = new HypeConsoleProgressbar("");
+        HypeConsoleProgressbar progressbar = new HypeConsoleProgressbar("Progress Bar Example");
         for(int i = 0; i <= 100; i++) {
             try {
                 progressbar.update(i);
